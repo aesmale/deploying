@@ -8,22 +8,6 @@
   </head>
   <body>
     <div class="container">
-    <h3>Add a User</h3>
-    <form class="" action="/add_user" method="post">
-      {% csrf_token %}
-      First Name: <input type="text" name="first_name" value="">
-      Last Name: <input type="text" name="last_name" value="">
-      Email: <input type="text" name="email" value="">
-      <input type="submit" name="submit" value="Add User">
-    </form>
-    <h3>All Users</h3>
-    <ul>
-    {% for user in all_users %}
-    <li>{{user.first_name}}</li>
-    {% endfor %}
-    <p>
-      <a href="/users_course"><button type="button" name="button">Enroll</button></a>
-    </p>
     <h3>Add a new course</h3>
     <form class="" action="/add_course" method="post">
       {% csrf_token %}
